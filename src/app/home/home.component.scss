@@ -2,7 +2,16 @@ tab{
     font-size: 1vw;
     margin-left: 1vw;
     margin-right: 1vw;
-    max-width: 20vw;
 
 }
 
+::ng-deep .customClass > a {
+    border-bottom: none !important;
+    outline: 0 !important; 
+    color: black;
+    font-size: 1vw;
+    margin-left: 14vw;
+    text-align: center;
+  }
+  
+  

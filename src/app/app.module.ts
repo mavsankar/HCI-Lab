@@ -6,16 +6,20 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import {TabsModule} from 'ngx-bootstrap';
 import { CoursesComponent } from './courses/courses.component'
+import { HttpClientModule } from '@angular/common/http';
+import { CourseComponent } from './course/course.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CoursesComponent
+    CoursesComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

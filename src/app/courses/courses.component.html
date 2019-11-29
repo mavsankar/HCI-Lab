@@ -1,22 +1,21 @@
-<div *ngFor="let i of k">
-<div  class="card"  >
-        <div class="card-header">
-          Course Category
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Course Name<span *ngIf="i<=3" class="ml-2 badge badge-secondary">New</span></h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go to the course</a>
-        </div>
+<div style="display: inline-block;width:20%;margin-top: 8%" *ngFor="let i of k">
+  <div class="card" [routerLink]="[i.Name]" >
+    <img class="card-img-top" style="height: 300px;" src="{{i.image}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{i.Name}}</h5>
+    </div>
+
 </div>
 
 </div>
-<nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-      </nav>
+<div class="pageTable">
+  <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+    </nav>
+</div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-courses',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoursesComponent implements OnInit {
 
-  constructor() { }
-  k = [1,2,3,4,5,6,7,8];
+  constructor(private http:HttpClient) { }
+  k :any;
   ngOnInit() {
+    this.http.get("../../assets/Categories.json").subscribe(data=>{
+      this.k = data['categories'];
+    })
   }
 
 }

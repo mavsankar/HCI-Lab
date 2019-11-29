@@ -1,0 +1,28 @@
+{
+    "categories":[
+        {
+            "Name":"Data Science",
+            "image":"../../assets/data_science.jpeg"
+        },
+
+        {
+            "Name":"Business",
+            "image":"../../assets/business.jpeg"
+        },
+
+        {
+            "Name":"Computer Science",
+            "image":"../../assets/computer_science.jpeg"
+        },
+
+        {
+            "Name":"Information Technology",
+            "image":"../../assets/information_technology.jpeg"
+        },
+
+        {
+            "Name":"Personal Development",
+            "image":"../../assets/personal_development.jpeg"
+        }
+    ]
+}
